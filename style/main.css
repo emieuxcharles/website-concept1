@@ -1,0 +1,107 @@
+@import url(/style/menu.css);
+@import url(/style/cursor.css);
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica"
+}
+body {
+    max-width: 100vw;
+}
+
+
+#container {
+    display: grid;
+    grid-template-columns: 25% 1fr;
+}
+
+
+#left {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    transition: 1s;
+    
+}
+#left h2 {
+    color: white;
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15vw;
+    
+  }
+
+#right {
+    background-color: white;
+}
+
+/**************** See JS for h2 color *****************/
+#left:hover {
+    background: white;
+    
+
+}
+
+
+section {
+    height: 100vh;
+    padding: 20% 20%;
+    scroll-behavior: smooth;
+}
+.black{
+    background: black;
+    color: white;
+}
+
+.textchange::before {
+    content: '';
+    animation: textchange infinite 8s;
+    transition: ease-in-out 2s;
+}
+@keyframes textchange {
+    0% {
+        content: 'Freelancer';
+    }
+    20% {
+        content: 'Web';
+    }
+    40% {
+        content: 'Developper';
+    }
+    60% {
+        content: 'Digital';
+    }
+    80% {
+        content: 'Marketing';
+    }
+    
+}
+
+.ml4 {
+    position: relative;
+    font-weight: 900;
+    font-size: 4.5em;
+  }
+  .ml4 .letters {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0.3em;
+    right: 0;
+    opacity: 0; 
+  }
+
+
+
+
+
+

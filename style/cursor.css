@@ -1,0 +1,39 @@
+@media (hover: none) {
+    .cursor {display:none !important;
+    }
+  }
+  * {
+    cursor:none;
+  }
+  .cursor {
+    --size: 20px;
+    height: var(--size);
+    width:  var(--size);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 99999999999;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+  .cursor.cursor-dot {
+    background: #ffffff;  /* This defines the color of the cursor */
+    mix-blend-mode: difference;  /* Delete this line if you dont want the circle to invert */
+    transition: width .6s, height .6s,
+      background-color .6s;
+    transition-timing-function: ease-out;
+  }
+  .cursor-dot.active {
+    --size: 60px;
+    background-color: #ffffff;
+  }
+  .cursor-dot.active-menu {
+    --size: 250px;
+    background-color: #ffffff;
+  }
+  .cursor-dot.active-img {
+    --size: 0px;
+    background-color: #ffffff;
+  }
+
+
+

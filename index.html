@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
+
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!--##### CURSOR SECTION #####-->
+    <div class="cursor cursor-dot" style="left: 437px; top: 439px"></div>
+    <!--##### MENU SECTION #####-->
+    <div onclick="closeNav()" id="menu" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a>
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <div class="link-menu">
+          <a href="#title1">About</a>
+          <a href="#title2">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="contact-menu">
+          <!--------- ?contact info? --------->
+        </div>
+        
+      </div>
+    </div>
+    <!--##### SITE SECTION #####-->
+    <div id="container">
+      <div id="left" class="section" onclick="openNav()">
+        <h2 id="menu-title">menu</h2>
+      </div>
+      <div id="right" class="section">
+
+        <section id="title1" class="white">
+          <h1>TITLE 1</h1>
+          
+          
+
+
+
+
+            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet
+            consectetur purus nec volutpat. Donec vel libero nec est commodo
+            facilisis vel et nisl. Praesent porta sed eros eu porta. Cras dolor
+            nulla, ullamcorper et tincidunt quis, porta ut tellus. Maecenas cursus
+            libero sed accumsan luctus. Integer sed consequat ante. Morbi sit amet
+            lectus tempor elit tempor cursus ut sed enim. Donec placerat bibendum
+            volutpat.
+          </p>
+        </section>
+        <section id="title2" class="black">
+          <h1 class="ml4">
+            <span class="letters letters-1">Ready</span>
+            <span class="letters letters-2">Set</span>
+            <span class="letters letters-3">Go!</span>
+          </h1>
+          <h2>test : <span class="textchange"></span></h2>
+          
+        </section>
+        <section class="white">
+          <h2>TITLE 3</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet
+            consectetur purus nec volutpat. Donec vel libero nec est commodo
+            facilisis vel et nisl. Praesent porta sed eros eu porta. Cras dolor
+            nulla, ullamcorper et tincidunt quis, porta ut tellus. Maecenas cursus
+            libero sed accumsan luctus. Integer sed consequat ante. Morbi sit amet
+            lectus tempor elit tempor cursus ut sed enim. Donec placerat bibendum
+            volutpat.
+          </p>
+        </section>
+        <section class="black">
+          <h2>TITLE 4</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet
+            consectetur purus nec volutpat. Donec vel libero nec est commodo
+            facilisis vel et nisl. Praesent porta sed eros eu porta. Cras dolor
+            nulla, ullamcorper et tincidunt quis, porta ut tellus. Maecenas cursus
+            libero sed accumsan luctus. Integer sed consequat ante. Morbi sit amet
+            lectus tempor elit tempor cursus ut sed enim. Donec placerat bibendum
+            volutpat.
+          </p>
+        </section>
+
+
+
+      </div>
+    </div>
+
+    <script src="/scripts/text-effect.js"></script>
+    <script src="/scripts/app.js"></script>
+  </body>
+</html>
